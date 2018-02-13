@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0"
+	xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"
+	xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<NamedLayer>
+		<Name>route</Name>
+		<UserStyle>
+			<Title>route style</Title>
+			
+			<FeatureTypeStyle>
+				<Rule>
+					<Title>teal line</Title>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#888888</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			
+			<!-- for principal highway start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>principal_highway</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#888888</CssParameter>
+							<CssParameter name="stroke-width">5</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#F8C967</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- principal highway ends -->
+			
+			<!-- for principal highway toll road start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>principal_highway_toll_road</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway   Toll Road</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#888888</CssParameter>
+							<CssParameter name="stroke-width">5</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway   Toll Road</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#F8C967</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- principal highway toll road ends -->
+			
+			<!-- for principal highway alternate route start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>principal_highway_alternate_route</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway   Alternate Route</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#888888</CssParameter>
+							<CssParameter name="stroke-width">5</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway   Alternate Route</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#F8C967</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- principal highway alternate route ends -->
+			
+			<!-- for principal highway business route start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>principal_highway_business_route</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway   Business Route</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#888888</CssParameter>
+							<CssParameter name="stroke-width">5</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Principal Highway   Business Route</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#F8C967</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- principal highway business route ends -->
+			
+			<!-- other highway start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>other_highway</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Other Highway</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#FDFCF9</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- other highway ends -->
+			
+			<!-- other through highway start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>other_through_highway</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Other Through Highway</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#FDFCF9</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- other through highway ends -->
+			
+			<!-- other through highway business route start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>other_highway_business_route</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Other Through Highway   Business Route</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#FDFCF9</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- other through highway business route ends -->
+			
+			<!-- other through highway alternate route start -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>other_highway_alternate_route</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Other Through Highway   Alternate Route</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#FDFCF9</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- other through highway alternate route ends -->
+			
+			
+			<!-- limited access highway -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>limited_access_highway</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Limited Access Highway</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#FDFCF9</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- limited access highway ends -->
+			
+			<!-- ferry crossing -->
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>ferry_crossing</Name>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>feature</ogc:PropertyName>
+							<ogc:Literal>Ferry Crossing</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#FDFCF9</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<!-- ferry crossing ends -->
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

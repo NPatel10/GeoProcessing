@@ -1,0 +1,102 @@
+.slideout{
+      position: fixed;
+      top: 150px;
+      width: 35px;
+      height: 200px;
+      text-align: center;
+      background: white;  
+      padding-top: 84px;
+      border : solid 2px rgb(34,34,34);
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    .slideout:hover{
+      background: rgb(34,34,34);
+      color: rgb(240,240,240);
+    }
+    .slideout_inner{
+      position: fixed;
+      top: 75px;
+      width: 260px;
+      min-height: 350px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      background: white;
+      border : solid 2px rgb(34,34,34);
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      text-align: left;
+    }
+    #left_slideout{
+      left: 0;
+      -webkit-border-radius: 0 3px 3px 0;
+      -moz-border-radius: 0 3px 3px 0;
+      border-radius: 0 3px 3px 0; 
+      border-left: none;    
+    }
+    #left_slideout_inner{
+      left: -260px;
+      -webkit-border-radius: 0 3px 3px 0;
+      -moz-border-radius: 0 3px 3px 0;
+      border-radius: 0 3px 3px 0;      
+    }
+    #right_slideout {
+      right: 0; 
+      -webkit-border-radius: 3px 0 0 3px;
+      -moz-border-radius: 3px 0 0 3px;
+      border-radius: 3px 0 0 3px;
+      border-right: none;
+    }
+    #right_slideout_inner {
+      right: -260px;
+      -webkit-border-radius: 3px 0 0 3px;
+      -moz-border-radius: 3px 0 0 3px;
+      border-radius: 3px 0 0 3px;      
+    }
+    .glyphicon-pushpin{
+      border: solid 2px rgb(34,34,34);
+      padding: 2px;
+      -webkit-border-radius: 2px 0 0 2px;
+      -moz-border-radius: 2px 0 0 2px;
+      border-radius: 2px 0 0 2px;
+    }
+    .glyphicon-pushpin:hover{
+      background: rgb(34,34,34);
+      border-color: rgb(76,175,80);
+      color: rgb(76,175,80);
+    } 
+    .hide{
+    	display: none;
+    }
+    #source_search_group, #destination_search_group{
+      border: solid 1px black;
+      
+    }
+    .source-search-result,.destination-search-result{
+    	color: rgb(34,34,34);
+    	background: rgb(250,250,250);
+    	padding-left: 5px;
+    }
+    .source-search-result:hover,.destination-search-result:hover{
+		background: rgb(34,34,34);
+    	color: rgb(240,240,240);
+    }
+    #map{
+    position:absolute;
+    top: 0px; 
+    left: 0px; 
+    background: rgb(237,227,205); 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+  }
+  #location{
+  	position: absolute; 
+  	bottom: 0px; 
+  	right: 0px;
+  }
